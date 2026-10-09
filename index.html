@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="sv" data-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark">
+    <meta
+      name="description"
+      content="Workflow Mapper Light hjälper dig att hitta skav i ett arbetsflöde och formulera ett litet första test."
+    >
+    <title>Workflow Mapper Light | Umeå Energi</title>
+    <link rel="icon" href="./shared-ui/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./shared-ui/tokens.css">
+    <link rel="stylesheet" href="./shared-ui/base.css">
+    <link rel="stylesheet" href="./shared-ui/components.css">
+    <link rel="stylesheet" href="./shared-ui/utilities.css">
+    <link rel="stylesheet" href="./src/styles.css">
+    <script type="module" src="./src/app.js?v=2026-10-09-pdf"></script>
+  </head>
+  <body>
+    <header class="toolbar app-toolbar">
+      <a class="toolbar__brand brand-link" href="./" aria-label="Workflow Mapper Light, startsida">
+        <img src="./shared-ui/logos/ue-logo-white.svg" alt="" class="brand-logo">
+        <span>Workflow Mapper Light</span>
+      </a>
+    </header>
+
+    <main id="app" class="app-shell" tabindex="-1"></main>
+
+    <div id="toast-region" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+  </body>
+</html>
