@@ -121,7 +121,10 @@ function updateStep(id, patch) {
 function goTo(screen) {
   state.screen = screen;
   render();
-  requestAnimationFrame(() => app()?.focus());
+  requestAnimationFrame(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+    app()?.focus({ preventScroll: true });
+  });
 }
 
 function next() {
